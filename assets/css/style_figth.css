@@ -1,0 +1,240 @@
+/* --- GERAL & FONTES --- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+.container_espelhokumite {
+  display: flex;
+  position: fixed; /* Fica fixo, não rola com a página */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% da largura da viewport (tela) */
+  height: 100vh; /* 100% da altura da viewport (tela) */
+  z-index: -1;
+  justify-content: space-around;
+  align-items: center;
+
+  /* A primeira cor vai de 0% a 50%. A segunda começa em 50% e vai até 100% */
+  background: linear-gradient(to right, #0088cc 50%, #d90429 50%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ATLETA BLUE */
+.container-pontosblue {
+  display: block;
+  width: 700px;
+  height: 800px;
+  justify-content: center;
+  justify-items: center;
+  color: aliceblue;
+  
+}
+
+.container-bluepenal {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 150px;
+  justify-content: right;
+  justify-items: right;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 1rem 1rem;  
+}
+
+.nome-blueAlt {  
+  max-width: 15em;
+  font-size: 65px;
+  font-weight: bold;
+  
+}
+
+.pontos-blue {
+  font-size: 450px;
+  font-weight: bold;
+}
+
+.p-hansokublue,
+.p-jogaiblue,
+.p-mubobiblue {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.p-jogaiblue {
+  width: 81%;
+  margin-left: 3.68rem;
+}
+
+.p-mubobiblue {
+  width: 91.8%;
+  margin-left: 1.5rem;
+}
+
+.ph1-blue,
+.ph2-blue,
+.ph3-blue,
+.pj1-blue,
+.pj2-blue,
+.pj3-blue,
+.pm1-blue,
+.pm2-blue,
+.pm3-blue {
+  height: 30px;
+  width: 30px;
+  border-radius: 200px;
+  /* A primeira cor está no centro, a segunda nas bordas */
+  background: radial-gradient(circle, #f7971e, #ffd200);
+  margin-left: 1rem; 
+}
+
+/* time */
+.area {
+  font-size: 100px;
+  color: aliceblue;
+  background-color: black;
+  padding: 0 1rem;
+  border-radius: 8px;
+  margin-top: .1em;
+}
+
+
+.time-logo {
+  display: block;
+  position: relative;
+  width: 36em;
+  height: 100%;  
+  justify-content: center;
+  justify-items: center;
+  align-items: center; 
+}
+
+.time-visor {
+  display: flex;
+  position: relative;
+  width: 2.8em;
+  height: 1.1em;
+  background-color: aliceblue;
+  font-size: 215px;
+  font-weight: bold;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 8px;  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+  margin-top: .2em;    
+}
+
+.img-timerlogo {
+  width: 300px;
+  height: 350px;
+  /* margin-top: 1vw; */
+  /* margin-left: 2em; */
+  margin: 13vw 13vh;
+}
+
+/* atleta red */
+.container-pontosred {
+  display: block;
+  width: 700px;
+  height: 800px;
+  justify-content: center;
+  justify-items: center;
+  color: aliceblue;
+}
+
+.container-redpenal {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 150px;
+  justify-content: right;
+  justify-items: right;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 1rem 1rem;
+}
+
+.nome-redAlt {
+  max-width: 15em;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.pontos-red {
+  font-size: 450px;
+  font-weight: bold;
+}
+
+.p-hansokured,
+.p-jogaired,
+.p-mubobired {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 40px;
+  color: aliceblue;  
+  
+  
+  
+}
+
+.p-jogaired {
+  width: 81%;
+  margin-left: 3.68rem;   
+}
+
+.p-mubobired {
+  width: 91.8%;
+  margin-left: 1.5rem;   
+}
+
+.ph1-red,
+.ph2-red,
+.ph3-red,
+.pj1-red,
+.pj2-red,
+.pj3-red,
+.pm1-red,
+.pm2-red,
+.pm3-red {
+  height: 30px;
+  width: 30px;
+  border-radius: 200px;
+  /* A primeira cor está no centro, a segunda nas bordas */
+  background: radial-gradient(circle, #f7971e, #ffd200);
+  margin-left: 10rem;
+}
+
+/* Estilo base para os indicadores de penalidade (escondidos por padrão) */
+.container-redpenal div div,
+.container-bluepenal div div {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+  background-color: #f0f0f0; /* Cor quando inativo */
+  /* vertical-align: middle; */
+}
+
+/* Estilo para quando o indicador de penalidade estiver ativo */
+.container-redpenal div div.active {
+  /* background-color: #ff0000;
+  border-color: #c00;
+  height: 30px; */
+  display: flex;
+  width: 30px;
+  border-radius: 200px;
+  background: radial-gradient(circle, #f7971e, #ffd200);
+  margin-right: 1.2rem;
+}
+
+.container-bluepenal div div.active {
+  display: flex;
+  width: 30px;
+  border-radius: 200px;
+  background: radial-gradient(circle, #f7971e, #ffd200);
+  margin-right: 1.2rem;
+}
